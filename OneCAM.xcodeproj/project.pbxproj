@@ -1,0 +1,494 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9D3CB4391ED4371000B98698 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3CB4381ED4371000B98698 /* AppDelegate.swift */; };
+		9D3CB43B1ED4371000B98698 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3CB43A1ED4371000B98698 /* ViewController.swift */; };
+		9D3CB43E1ED4371000B98698 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D3CB43C1ED4371000B98698 /* Main.storyboard */; };
+		9D3CB4401ED4371000B98698 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D3CB43F1ED4371000B98698 /* Assets.xcassets */; };
+		9D3CB4431ED4371000B98698 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D3CB4411ED4371000B98698 /* LaunchScreen.storyboard */; };
+		9D70F4591ED5760F0001DA52 /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D70F4581ED5760F0001DA52 /* BaseVC.swift */; };
+		9D70F45B1ED577010001DA52 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D70F45A1ED577010001DA52 /* UIColor+Extension.swift */; };
+		9D70F45D1ED577550001DA52 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D70F45C1ED577550001DA52 /* UIView+Extension.swift */; };
+		9D70F4601ED57B840001DA52 /* Specs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D70F45F1ED57B840001DA52 /* Specs.swift */; };
+		9D70F4661ED57E970001DA52 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D70F4651ED57E970001DA52 /* CameraViewController.swift */; };
+		B37DD0EB2BADDD8DA7F0A797 /* Pods_OneCAM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D737FEDE360CB96E77414476 /* Pods_OneCAM.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9D3CB7CC1ED43A2500B98698 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		410C2D43A18670443C3F571A /* Pods-OneCAM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneCAM.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OneCAM/Pods-OneCAM.debug.xcconfig"; sourceTree = "<group>"; };
+		837CC409188FFAF5505C682C /* Pods-OneCAM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneCAM.release.xcconfig"; path = "Pods/Target Support Files/Pods-OneCAM/Pods-OneCAM.release.xcconfig"; sourceTree = "<group>"; };
+		9D3CB4351ED4371000B98698 /* OneCAM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OneCAM.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D3CB4381ED4371000B98698 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9D3CB43A1ED4371000B98698 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9D3CB43D1ED4371000B98698 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9D3CB43F1ED4371000B98698 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9D3CB4421ED4371000B98698 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9D3CB4441ED4371000B98698 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9D70F4581ED5760F0001DA52 /* BaseVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseVC.swift; sourceTree = "<group>"; };
+		9D70F45A1ED577010001DA52 /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		9D70F45C1ED577550001DA52 /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		9D70F45F1ED57B840001DA52 /* Specs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Specs.swift; sourceTree = "<group>"; };
+		9D70F4651ED57E970001DA52 /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		D737FEDE360CB96E77414476 /* Pods_OneCAM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OneCAM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9D3CB4321ED4371000B98698 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B37DD0EB2BADDD8DA7F0A797 /* Pods_OneCAM.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1832D6B7A35DCE5AC4397BE2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				410C2D43A18670443C3F571A /* Pods-OneCAM.debug.xcconfig */,
+				837CC409188FFAF5505C682C /* Pods-OneCAM.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8D4F7E54776B59FA699256B0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D737FEDE360CB96E77414476 /* Pods_OneCAM.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9D3CB42C1ED4371000B98698 = {
+			isa = PBXGroup;
+			children = (
+				9D3CB44A1ED438FA00B98698 /* OMKit */,
+				9D3CB4371ED4371000B98698 /* OneCAM */,
+				9D3CB4361ED4371000B98698 /* Products */,
+				1832D6B7A35DCE5AC4397BE2 /* Pods */,
+				8D4F7E54776B59FA699256B0 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9D3CB4361ED4371000B98698 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9D3CB4351ED4371000B98698 /* OneCAM.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9D3CB4371ED4371000B98698 /* OneCAM */ = {
+			isa = PBXGroup;
+			children = (
+				9D70F4571ED575D90001DA52 /* Base */,
+				9D70F4631ED57DAC0001DA52 /* Model */,
+				9D70F4621ED57DA70001DA52 /* View */,
+				9D70F4641ED57DB10001DA52 /* Controller */,
+				9D3CB4381ED4371000B98698 /* AppDelegate.swift */,
+				9D3CB43A1ED4371000B98698 /* ViewController.swift */,
+				9D3CB43C1ED4371000B98698 /* Main.storyboard */,
+				9D3CB43F1ED4371000B98698 /* Assets.xcassets */,
+				9D3CB4411ED4371000B98698 /* LaunchScreen.storyboard */,
+				9D3CB4441ED4371000B98698 /* Info.plist */,
+			);
+			path = OneCAM;
+			sourceTree = "<group>";
+		};
+		9D3CB44A1ED438FA00B98698 /* OMKit */ = {
+			isa = PBXGroup;
+			children = (
+				9D70F4561ED574B90001DA52 /* Misc */,
+				9D70F4551ED574B10001DA52 /* Extension */,
+				9D3CB44B1ED4391E00B98698 /* Vendor */,
+			);
+			path = OMKit;
+			sourceTree = "<group>";
+		};
+		9D3CB44B1ED4391E00B98698 /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Vendor;
+			sourceTree = "<group>";
+		};
+		9D70F4551ED574B10001DA52 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				9D70F45A1ED577010001DA52 /* UIColor+Extension.swift */,
+				9D70F45C1ED577550001DA52 /* UIView+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		9D70F4561ED574B90001DA52 /* Misc */ = {
+			isa = PBXGroup;
+			children = (
+				9D70F45F1ED57B840001DA52 /* Specs.swift */,
+			);
+			path = Misc;
+			sourceTree = "<group>";
+		};
+		9D70F4571ED575D90001DA52 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				9D70F4611ED57D840001DA52 /* Controller */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		9D70F4611ED57D840001DA52 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9D70F4581ED5760F0001DA52 /* BaseVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		9D70F4621ED57DA70001DA52 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9D70F4631ED57DAC0001DA52 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9D70F4641ED57DB10001DA52 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9D70F4651ED57E970001DA52 /* CameraViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9D3CB4341ED4371000B98698 /* OneCAM */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9D3CB4471ED4371000B98698 /* Build configuration list for PBXNativeTarget "OneCAM" */;
+			buildPhases = (
+				54B61E05211918E5168045B4 /* [CP] Check Pods Manifest.lock */,
+				9D3CB4311ED4371000B98698 /* Sources */,
+				9D3CB4321ED4371000B98698 /* Frameworks */,
+				9D3CB4331ED4371000B98698 /* Resources */,
+				9D3CB7CC1ED43A2500B98698 /* CopyFiles */,
+				836907A001B91E34B947D439 /* [CP] Embed Pods Frameworks */,
+				BDF97C54401AD577BBF69A1B /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OneCAM;
+			productName = OneCAM;
+			productReference = 9D3CB4351ED4371000B98698 /* OneCAM.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9D3CB42D1ED4371000B98698 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = sunvlink;
+				TargetAttributes = {
+					9D3CB4341ED4371000B98698 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = X2Z665SMWB;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 9D3CB4301ED4371000B98698 /* Build configuration list for PBXProject "OneCAM" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9D3CB42C1ED4371000B98698;
+			productRefGroup = 9D3CB4361ED4371000B98698 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9D3CB4341ED4371000B98698 /* OneCAM */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9D3CB4331ED4371000B98698 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D3CB4431ED4371000B98698 /* LaunchScreen.storyboard in Resources */,
+				9D3CB4401ED4371000B98698 /* Assets.xcassets in Resources */,
+				9D3CB43E1ED4371000B98698 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		54B61E05211918E5168045B4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		836907A001B91E34B947D439 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OneCAM/Pods-OneCAM-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BDF97C54401AD577BBF69A1B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OneCAM/Pods-OneCAM-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9D3CB4311ED4371000B98698 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D70F4601ED57B840001DA52 /* Specs.swift in Sources */,
+				9D3CB43B1ED4371000B98698 /* ViewController.swift in Sources */,
+				9D70F4591ED5760F0001DA52 /* BaseVC.swift in Sources */,
+				9D3CB4391ED4371000B98698 /* AppDelegate.swift in Sources */,
+				9D70F4661ED57E970001DA52 /* CameraViewController.swift in Sources */,
+				9D70F45D1ED577550001DA52 /* UIView+Extension.swift in Sources */,
+				9D70F45B1ED577010001DA52 /* UIColor+Extension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9D3CB43C1ED4371000B98698 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9D3CB43D1ED4371000B98698 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9D3CB4411ED4371000B98698 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9D3CB4421ED4371000B98698 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9D3CB4451ED4371000B98698 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9D3CB4461ED4371000B98698 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9D3CB4481ED4371000B98698 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 410C2D43A18670443C3F571A /* Pods-OneCAM.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = X2Z665SMWB;
+				INFOPLIST_FILE = OneCAM/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sunvlink.OneCAM;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		9D3CB4491ED4371000B98698 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 837CC409188FFAF5505C682C /* Pods-OneCAM.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = X2Z665SMWB;
+				INFOPLIST_FILE = OneCAM/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sunvlink.OneCAM;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9D3CB4301ED4371000B98698 /* Build configuration list for PBXProject "OneCAM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D3CB4451ED4371000B98698 /* Debug */,
+				9D3CB4461ED4371000B98698 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9D3CB4471ED4371000B98698 /* Build configuration list for PBXNativeTarget "OneCAM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D3CB4481ED4371000B98698 /* Debug */,
+				9D3CB4491ED4371000B98698 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9D3CB42D1ED4371000B98698 /* Project object */;
+}

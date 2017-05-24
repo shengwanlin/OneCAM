@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Camera View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="CameraViewController" customModule="OneCAM" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tEQ-L6-MpC" userLabel="Video Preview" customClass="GPUImageView">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="500"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="tEQ-L6-MpC" secondAttribute="height" multiplier="480:640" id="Rsf-wC-d5X"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xi0-mh-fI8">
+                                <rect key="frame" x="0.0" y="500" width="375" height="167"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dY2-sy-NpX">
+                                        <rect key="frame" x="159.5" y="68" width="55" height="30"/>
+                                        <state key="normal" title="Capture"/>
+                                        <connections>
+                                            <action selector="captureStillImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="osO-LM-Dxm"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KgC-c4-Ihi">
+                                        <rect key="frame" x="305" y="111" width="40" height="30"/>
+                                        <state key="normal" title="Invert"/>
+                                        <connections>
+                                            <action selector="switchCameraDevice:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gYQ-r0-kMe"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="dY2-sy-NpX" firstAttribute="centerX" secondItem="xi0-mh-fI8" secondAttribute="centerX" id="CoO-tf-yuK"/>
+                                    <constraint firstAttribute="trailing" secondItem="KgC-c4-Ihi" secondAttribute="trailing" constant="30" id="EI7-Jh-Ub8"/>
+                                    <constraint firstAttribute="bottom" secondItem="KgC-c4-Ihi" secondAttribute="bottom" constant="26" id="qDp-f2-YGn"/>
+                                    <constraint firstItem="dY2-sy-NpX" firstAttribute="centerY" secondItem="xi0-mh-fI8" secondAttribute="centerY" id="sDq-wP-TLK"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="tEQ-L6-MpC" secondAttribute="trailing" id="KYI-ac-x8N"/>
+                            <constraint firstItem="xi0-mh-fI8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Rpu-NG-Qy3"/>
+                            <constraint firstItem="xi0-mh-fI8" firstAttribute="top" secondItem="tEQ-L6-MpC" secondAttribute="bottom" id="atA-R4-KID"/>
+                            <constraint firstAttribute="trailing" secondItem="xi0-mh-fI8" secondAttribute="trailing" id="krB-ps-vrv"/>
+                            <constraint firstItem="tEQ-L6-MpC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="vkb-jf-xid"/>
+                            <constraint firstItem="tEQ-L6-MpC" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="x1Q-IM-loK"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="xi0-mh-fI8" secondAttribute="bottom" id="xKu-Jb-aak"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="renderView" destination="tEQ-L6-MpC" id="qYf-GU-tfr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="37.331334332833585"/>
+        </scene>
+    </scenes>
+</document>
