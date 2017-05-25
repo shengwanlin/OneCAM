@@ -32,7 +32,11 @@
                                 <rect key="frame" x="0.0" y="500" width="375" height="167"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dY2-sy-NpX">
-                                        <rect key="frame" x="159.5" y="68" width="55" height="30"/>
+                                        <rect key="frame" x="157" y="53" width="60" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="dY2-sy-NpX" secondAttribute="height" id="5Vr-T5-CwF"/>
+                                            <constraint firstAttribute="height" constant="60" id="We5-bE-DLx"/>
+                                        </constraints>
                                         <state key="normal" title="Capture"/>
                                         <connections>
                                             <action selector="captureStillImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="osO-LM-Dxm"/>
@@ -67,6 +71,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="captureButton" destination="dY2-sy-NpX" id="6Zm-yw-qQG"/>
                         <outlet property="renderView" destination="tEQ-L6-MpC" id="qYf-GU-tfr"/>
                     </connections>
                 </viewController>
