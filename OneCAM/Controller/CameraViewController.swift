@@ -12,16 +12,7 @@ import GPUImage
 class CameraViewController: BaseVC {
   
   @IBOutlet weak var renderView: GPUImageView!
-  @IBOutlet weak var captureButton: UIButton!
-  
-  fileprivate let captureLayer: CAGradientLayer = {
-    let layer = CAGradientLayer()
-    layer.colors = [Specs.color.tint.cgColor]
-    layer.locations = [0, 0.5, 1]
-    layer.startPoint = CGPoint(x: 0, y: 0.5)
-    layer.endPoint = CGPoint(x: 1, y: 0.5)
-    return layer
-  }()
+  @IBOutlet weak var captureButton: CaptureButton!
   
   var stillCamera: GPUImageStillCamera!
   var saturation: GPUImageSaturationFilter!
@@ -29,53 +20,41 @@ class CameraViewController: BaseVC {
   override func viewDidLoad() {
     super.viewDidLoad()
     setupUI()
-    saturation = GPUImageSaturationFilter()
-    saturation.addTarget(renderView)
-    saturation.saturation = 0.5;
-    
-    restartCamera(with: .back)
+    setupCamera()
   }
   
   override func viewDidLayoutSubviews() {
     super.viewDidLayoutSubviews()
-    captureLayer.frame = captureButton.bounds
-    captureLayer.cornerRadius = captureLayer.heigth / 2
-    captureLayer.masksToBounds = true
-    
+    captureButton.setNeedsLayout()
   }
   
   func setupUI() {
-    captureButton.setTitle("", for: .normal)
-    captureButton.layer.addSublayer(captureLayer)
-    
     let focusTap = UITapGestureRecognizer(target: self, action: #selector(onTappedRenderView(tapGestureRecognizer:)))
     focusTap.numberOfTapsRequired = 1
     renderView.addGestureRecognizer(focusTap)
   }
-
-  func restartCamera(with position: AVCaptureDevicePosition) {
-    if let camera = self.stillCamera {
-      camera.stopCapture()
-      camera.removeAllTargets()
-    }
-    let stillCamera = GPUImageStillCamera(sessionPreset: AVCaptureSessionPresetPhoto, cameraPosition: position)
-    stillCamera?.outputImageOrientation = preferredInterfaceOrientationForPresentation;
+  
+  func setupCamera() {
+    saturation = GPUImageSaturationFilter()
+    saturation.addTarget(renderView)
+    saturation.saturation = 0.5;
     
-    self.stillCamera = stillCamera;
-    self.stillCamera?.addTarget(saturation)
-    self.stillCamera?.startCapture()
+    stillCamera = GPUImageStillCamera(sessionPreset: AVCaptureSessionPresetPhoto, cameraPosition: .back)
+    stillCamera.outputImageOrientation = preferredInterfaceOrientationForPresentation;
+    stillCamera.addTarget(saturation)
+    stillCamera.startCapture()
   }
   
   // MARK: Actions
   
   @IBAction func captureStillImage(_ sender: UIButton) {
-    stillCamera?.capturePhotoAsImageProcessedUp(toFilter: saturation) { (image, error) in
+    stillCamera.capturePhotoAsImageProcessedUp(toFilter: saturation) { (image, error) in
       
     }
-    
   }
   @IBAction func switchCameraDevice(_ sender: UIButton) {
-    restartCamera(with: stillCamera?.cameraPosition() == .front ? .back : .front)
+    stillCamera.rotateCamera()
+    print(stillCamera.cameraPosition().rawValue)
   }
   
   // MARK: GestureRecognizer

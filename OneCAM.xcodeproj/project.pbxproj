@@ -18,6 +18,7 @@
 		9D70F4601ED57B840001DA52 /* Specs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D70F45F1ED57B840001DA52 /* Specs.swift */; };
 		9D70F4661ED57E970001DA52 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D70F4651ED57E970001DA52 /* CameraViewController.swift */; };
 		9D7FA1A81ED6D733006A10FB /* AVCaptureDevice+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7FA1A71ED6D733006A10FB /* AVCaptureDevice+Extension.swift */; };
+		9D9C7F5E1ED8075F00D56F7A /* CaptureButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D9C7F5D1ED8075E00D56F7A /* CaptureButton.swift */; };
 		B37DD0EB2BADDD8DA7F0A797 /* Pods_OneCAM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D737FEDE360CB96E77414476 /* Pods_OneCAM.framework */; };
 /* End PBXBuildFile section */
 
@@ -49,6 +50,7 @@
 		9D70F45F1ED57B840001DA52 /* Specs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Specs.swift; sourceTree = "<group>"; };
 		9D70F4651ED57E970001DA52 /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		9D7FA1A71ED6D733006A10FB /* AVCaptureDevice+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AVCaptureDevice+Extension.swift"; sourceTree = "<group>"; };
+		9D9C7F5D1ED8075E00D56F7A /* CaptureButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaptureButton.swift; sourceTree = "<group>"; };
 		D737FEDE360CB96E77414476 /* Pods_OneCAM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OneCAM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -171,6 +173,7 @@
 		9D70F4621ED57DA70001DA52 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				9D9C7F5D1ED8075E00D56F7A /* CaptureButton.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -322,6 +325,7 @@
 				9D70F4661ED57E970001DA52 /* CameraViewController.swift in Sources */,
 				9D7FA1A81ED6D733006A10FB /* AVCaptureDevice+Extension.swift in Sources */,
 				9D70F45D1ED577550001DA52 /* UIView+Extension.swift in Sources */,
+				9D9C7F5E1ED8075F00D56F7A /* CaptureButton.swift in Sources */,
 				9D70F45B1ED577010001DA52 /* UIColor+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

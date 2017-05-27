@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -18,52 +19,84 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tEQ-L6-MpC" userLabel="Video Preview" customClass="GPUImageView">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="500"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="426"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="tEQ-L6-MpC" secondAttribute="height" multiplier="480:640" id="Rsf-wC-d5X"/>
+                                    <constraint firstAttribute="width" secondItem="tEQ-L6-MpC" secondAttribute="height" multiplier="400:533" id="lor-H3-ht5"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xi0-mh-fI8">
-                                <rect key="frame" x="0.0" y="500" width="375" height="167"/>
+                                <rect key="frame" x="0.0" y="426" width="320" height="142"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dY2-sy-NpX">
-                                        <rect key="frame" x="157" y="53" width="60" height="60"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" secondItem="dY2-sy-NpX" secondAttribute="height" id="5Vr-T5-CwF"/>
-                                            <constraint firstAttribute="height" constant="60" id="We5-bE-DLx"/>
-                                        </constraints>
-                                        <state key="normal" title="Capture"/>
-                                        <connections>
-                                            <action selector="captureStillImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="osO-LM-Dxm"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KgC-c4-Ihi">
-                                        <rect key="frame" x="305" y="111" width="40" height="30"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KgC-c4-Ihi">
+                                        <rect key="frame" x="244" y="69.5" width="46" height="34"/>
                                         <state key="normal" title="Invert"/>
                                         <connections>
                                             <action selector="switchCameraDevice:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gYQ-r0-kMe"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dY2-sy-NpX" customClass="CaptureButton" customModule="OneCAM" customModuleProvider="target">
+                                        <rect key="frame" x="134.5" y="61" width="51" height="51"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="dY2-sy-NpX" secondAttribute="height" id="KC2-6I-e4K"/>
+                                        </constraints>
+                                        <connections>
+                                            <action selector="captureStillImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="osO-LM-Dxm"/>
+                                        </connections>
+                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="itf-tP-bYa">
+                                        <rect key="frame" x="0.0" y="5" width="320" height="40"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JXF-tY-7Wp">
+                                                <rect key="frame" x="0.0" y="8" width="80" height="24"/>
+                                                <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                <state key="normal" image="customermanagement_export"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ULH-7f-4ia">
+                                                <rect key="frame" x="80" y="8" width="80" height="24"/>
+                                                <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                <state key="normal" image="customermanagement_news"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bho-uo-NUt">
+                                                <rect key="frame" x="160" y="7.5" width="80" height="25"/>
+                                                <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                <state key="normal" image="customermanagement_populationanalysis"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Win-Rn-NwS">
+                                                <rect key="frame" x="240" y="8" width="80" height="24"/>
+                                                <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                <state key="normal" image="customermanagement_export"/>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="VeN-0a-Ku3"/>
+                                        </constraints>
+                                    </stackView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstItem="dY2-sy-NpX" firstAttribute="centerX" secondItem="xi0-mh-fI8" secondAttribute="centerX" id="CoO-tf-yuK"/>
+                                    <constraint firstItem="dY2-sy-NpX" firstAttribute="centerY" secondItem="xi0-mh-fI8" secondAttribute="centerY" constant="15" id="3Sd-8K-ear"/>
+                                    <constraint firstItem="KgC-c4-Ihi" firstAttribute="centerY" secondItem="dY2-sy-NpX" secondAttribute="centerY" id="5bw-cG-jIP"/>
                                     <constraint firstAttribute="trailing" secondItem="KgC-c4-Ihi" secondAttribute="trailing" constant="30" id="EI7-Jh-Ub8"/>
-                                    <constraint firstAttribute="bottom" secondItem="KgC-c4-Ihi" secondAttribute="bottom" constant="26" id="qDp-f2-YGn"/>
-                                    <constraint firstItem="dY2-sy-NpX" firstAttribute="centerY" secondItem="xi0-mh-fI8" secondAttribute="centerY" id="sDq-wP-TLK"/>
+                                    <constraint firstItem="dY2-sy-NpX" firstAttribute="width" secondItem="xi0-mh-fI8" secondAttribute="width" multiplier="60:375" id="FZy-FG-U6c"/>
+                                    <constraint firstItem="itf-tP-bYa" firstAttribute="leading" secondItem="xi0-mh-fI8" secondAttribute="leading" id="HNi-Ng-ay9"/>
+                                    <constraint firstItem="itf-tP-bYa" firstAttribute="top" secondItem="xi0-mh-fI8" secondAttribute="top" constant="5" id="M5R-Fu-1WA"/>
+                                    <constraint firstAttribute="trailing" secondItem="itf-tP-bYa" secondAttribute="trailing" id="Rc9-aw-bhS"/>
+                                    <constraint firstItem="dY2-sy-NpX" firstAttribute="centerX" secondItem="xi0-mh-fI8" secondAttribute="centerX" id="v30-Ld-ZqF"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="xi0-mh-fI8" firstAttribute="top" secondItem="tEQ-L6-MpC" secondAttribute="bottom" id="Hws-yz-oxy"/>
                             <constraint firstAttribute="trailing" secondItem="tEQ-L6-MpC" secondAttribute="trailing" id="KYI-ac-x8N"/>
                             <constraint firstItem="xi0-mh-fI8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Rpu-NG-Qy3"/>
-                            <constraint firstItem="xi0-mh-fI8" firstAttribute="top" secondItem="tEQ-L6-MpC" secondAttribute="bottom" id="atA-R4-KID"/>
                             <constraint firstAttribute="trailing" secondItem="xi0-mh-fI8" secondAttribute="trailing" id="krB-ps-vrv"/>
                             <constraint firstItem="tEQ-L6-MpC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="vkb-jf-xid"/>
                             <constraint firstItem="tEQ-L6-MpC" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="x1Q-IM-loK"/>
@@ -71,7 +104,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="captureButton" destination="dY2-sy-NpX" id="6Zm-yw-qQG"/>
+                        <outlet property="captureButton" destination="dY2-sy-NpX" id="q6f-TL-cRz"/>
                         <outlet property="renderView" destination="tEQ-L6-MpC" id="qYf-GU-tfr"/>
                     </connections>
                 </viewController>
@@ -80,4 +113,9 @@
             <point key="canvasLocation" x="32.799999999999997" y="37.331334332833585"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="customermanagement_export" width="24" height="24"/>
+        <image name="customermanagement_news" width="24" height="24"/>
+        <image name="customermanagement_populationanalysis" width="25" height="25"/>
+    </resources>
 </document>
